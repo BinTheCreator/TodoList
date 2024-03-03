@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="function.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>What To Do List</title>
+</head>
+<body>
+    <!-- Title -->
+    <div id ="head1"><h1> Thing To Do List</h1></div>
+    <!-- Button Wrap -->
+    <div class="btn-wrap">
+        <!-- Front Group btn -->
+    <div class = "front-btn">
+        <button id = control-btn class = "front-btn">New</button>
+        <button id = control-btn class = "front-btn">Old</button>
+    </div>
+        <!-- Back Group btn -->
+    <div class = "back-btn">
+        <button id = control-btn class = "back-btn" onclick="show_modal()">Add</button>
+        <button id = control-btn class = "back-btn">Delete</button>
+        <button id = control-btn class = "back-btn">Resolve</button>
+    </div>
+    </div>
+    <!-- Button Wrap END-->
+
+     <!-- Table Start -->
+    <table>
+        <thead>
+            <th>Date</th>
+            <th>Content</th>
+            <th>Priority</th>
+            <th>Status</th>
+            <th>Due Date</th>
+        </thead>  
+    </table>
+    <!-- Table end -->
+
+    <!-- The Modal/Form -->
+    <div class = "input-form" id = "form01" style="display: none;">
+        <div class="modal_content">
+            <form>
+                <span class ="close" onclick="close_modal()">&times;</span>
+                <label>Content:</label><br>
+                <textarea id="content" rows="4" cols="50"></textarea><br><br>
+                <label>Type:</label>
+                <input type= "radio" value="Normal" name="type_input">
+                <label>Normal:</label>
+                <input type= "radio" value="Priority" name="type_input">
+                <label>Priority</label>
+                <input type= "radio" value="Urgent" name="type_input">
+                <label>Urgent</label><br><br>
+                <label for="dueDate">Due Date:</label>
+                <input type="date"><br><br>
+                <input type="submit" id="submit" value="Submit">
+                
+            </form>
+        </div>
+    </div>
+    <!-- The Modal/Form END-->
+</body>
+</html>

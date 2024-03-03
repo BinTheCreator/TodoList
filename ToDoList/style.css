@@ -1,0 +1,95 @@
+body {
+     font-family: Arial, sans-serif, Helvetica, Verdana, 'Trebuchet MS';
+     display: flex;
+     flex-direction: column;
+}
+/* Button Wrap */
+div.btn-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* The Title of the Page */
+#head1 { 
+    color:  rgb(248, 242, 242);
+    display: block;
+    text-align: center;
+    background-color: rgb(19, 73, 248);
+}
+/* Style all of the buttons that controls the table */
+#control-btn { 
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    font-weight: bold;
+    min-height: 35px;
+    min-width: 75px
+}
+/* Wraps of two Btns groups */
+div.front-btn, div.back-btn  {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 2%; 
+}
+/* Table */
+table, th, td{
+    border: 1.5px solid rgb(48, 47, 47);
+    border-collapse: collapse;
+
+}
+/* increase the weight of Content tab */
+th:nth-child(2) {
+    width: 40%;
+}
+/*The Modal wrap or the background of the modal */
+.input-form {
+    display: flex;
+    align-self: center;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 15%; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Textarea Input */
+#content {
+    width: 90%;
+    min-height: 50px;
+    font-size: large;
+    
+}
+/* The modal form */
+.modal_content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 50%;
+    font-weight: 600;
+    
+}
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+.close:hover,  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+ 
